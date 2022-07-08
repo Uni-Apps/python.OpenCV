@@ -4,3 +4,4 @@
 
   roles:
   - role: python.OpenCV
+  - role: NumPy
