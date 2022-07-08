@@ -2,8 +2,6 @@
 - name: Install OpenCV core
   ansible.builtin.apt:
     pkg:
-      - opencv
-      - opencv-contrib
-      - opencv-doc
+      - libopencv-dev
     state: latest
   become: true
