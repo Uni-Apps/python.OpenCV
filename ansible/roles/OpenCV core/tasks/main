@@ -1,0 +1,12 @@
+---
+- name: Install OpenCV
+  ansible.builtin.dnf:
+    name:
+      - opencv
+      - opencv-contrib
+      - opencv-doc
+      - python3-opencv
+      - python3-matplotlib
+      - python3-numpy
+    state: latest
+  become: true
