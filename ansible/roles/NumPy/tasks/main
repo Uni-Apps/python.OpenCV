@@ -1,9 +1,3 @@
 ---
----
-- name: Install NumPy
-  ansible.builtin.dnf:
-    name:
-      - python3-matplotlib
-      - python3-numpy
-    state: latest
-  become: true
+# Automatically uses Sub-folders to contain distro specific scrips
+- include_tasks: '{{ ansible_os_family }}/{{ ansible_distribution }}/{{ ansible_distribution_major_version }}'
