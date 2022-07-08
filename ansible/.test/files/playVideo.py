@@ -11,6 +11,4 @@ while True:
 capture.release()
 cv.destroyAllWindows()
 
-readVideo()
-
 cv.waitKey(0)
