@@ -10,7 +10,7 @@
     state: latest
   become: true
 
-# Try
+# Trash
       # - libgstreamer-plugins-base1.0-dev
       # - libgstreamer-plugins-bad1.0-dev
 
